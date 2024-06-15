@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Kayıt Sistemi</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="kayit.php" method="post" onsubmit="return kayitDogrula()" style="display: flex; flex-direction: column; gap:.5rem;">
+        <h1>Kullanıcı Kayıt</h1>
+        <input type="text" id="isim" name="isim" placeholder="Adınız">
+        <input type="text" id="soyisim" name="soyisim" placeholder="Soyadınız">
+        <input type="email" id="eposta" name="eposta" placeholder="E-Posta Adresiniz">
+        <input type="password" id="sifre" name="sifre" placeholder="Şifre">
+        <input type="password" id="sifreTekrar" name="sifreTekrar" placeholder="Şifre Tekrar">
+        <label for="dogumTarihi">Doğum Tarihi:</label>
+        <input type="date" id="dogumTarihi" name="dogumTarihi">
+        <label for="cinsiyet">Cinsiyet:</label>
+        <select id="cinsiyet" name="cinsiyet">
+            <option value="erkek">Erkek</option>
+            <option value="kadin">Kadın</option>
+        </select>
+        <button type="submit">Kayıt Ol</button>
+        <a href="goster.php">Kayıtları Göster</a>
+    </form>
+</body>
+</html>
